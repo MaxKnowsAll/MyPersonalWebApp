@@ -1,0 +1,121 @@
+body {
+    margin: 0;
+    margin-top: 50px;
+    font-family: sans-serif;
+}
+
+header {
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 50px;
+    line-height: 50px;
+    background-color: #eee;
+}
+
+header * {
+    display: inline;
+    height: 50px;
+}
+
+header ul {
+    padding: 0;
+}
+
+header li {
+    margin-left: 20px;
+}
+
+section {
+    height: 100vh;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+    background-size: cover; 
+    background-position: center center;
+    background-repeat: no-repeat; 
+    background-attachment: fixed; 
+}
+
+#home .profile-img {
+    width: 300px;
+    border-radius: 50%;
+}
+
+footer {
+    text-align: center;
+    padding: 50px;
+}
+
+#home h1 {
+    font-size: 3em;
+}
+
+section h2 {
+    font-size: 2.5em;
+}
+section h3 {
+    font-size: 1em;
+ font-family: 'poppins', sans-serif;
+    font-weight: 100;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-bottom: 50px;
+    padding-top: 50px;
+}
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+img {
+    max-width: 300px;
+    border: 3px solid rgb(219, 211, 211);
+    border-radius: 10px;
+    margin-right: 16px;
+}
+
+.wrapper {
+    margin: 150px auto;
+    width: 70%; 
+}
+.text-box {
+    color: black;
+}
+.textbox h4 {
+    font-size: 16px;
+    padding-right: 50px;
+}
+
+header a {
+    text-decoration: none;
+    color: black;
+}
+.wrapper1 {
+    margin: 150px;
+    width: 70%;
+}
+.text-box1 {
+    color: black;
+}
+.text-box1 h5{
+    font-size: 16px;
+}
+
+#home {
+    background-image: linear-gradient(rgba(255,255,255,0.75),rgba(255,255,255,0.75)), url('https://codetheweb.blog/assets/img/posts/steps-to-creating-a-website/field.jpg');
+}
+
+#about {
+    background-image: linear-gradient(rgba(255,255,255,0.75),rgba(255,255,255,0.75)), url('https://codetheweb.blog/assets/img/posts/steps-to-creating-a-website/beach.jpg');
+}
+
+#mywork {
+    background-image: linear-gradient(rgba(255,255,255,0.75),rgba(255,255,255,0.75)), url('https://codetheweb.blog/assets/img/posts/steps-to-creating-a-website/canyon.jpg');
+}
