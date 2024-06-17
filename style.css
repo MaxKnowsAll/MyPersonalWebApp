@@ -1,9 +1,18 @@
+/* General Styles */
 body {
     margin: 0;
     margin-top: 50px;
     font-family: sans-serif;
 }
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+
+/* Header Styles */
 header {
     display: flex;
     position: fixed;
@@ -22,90 +31,39 @@ header * {
 
 header ul {
     padding: 0;
+    list-style: none;
+    display: flex;
 }
 
 header li {
     margin-left: 20px;
 }
 
+header a {
+    text-decoration: none;
+    color: black;
+}
+
+header img.profile-img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+/* Section Styles */
 section {
-    height: 100vh;
+    min-height: 100vh;
     border: 1px solid black;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
-    
     background-size: cover; 
     background-position: center center;
     background-repeat: no-repeat; 
     background-attachment: fixed; 
-}
-
-#home .profile-img {
-    width: 300px;
-    border-radius: 50%;
-}
-
-footer {
-    text-align: center;
-    padding: 50px;
-}
-
-#home h1 {
-    font-size: 3em;
-}
-
-section h2 {
-    font-size: 2.5em;
-}
-section h3 {
-    font-size: 1em;
- font-family: 'poppins', sans-serif;
-    font-weight: 100;
-    padding-left: 100px;
-    padding-right: 100px;
-    padding-bottom: 50px;
-    padding-top: 50px;
-}
-*{
-    margin:0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'poppins', sans-serif;
-}
-img {
-    max-width: 300px;
-    border: 3px solid rgb(219, 211, 211);
-    border-radius: 10px;
-    margin-right: 16px;
-}
-
-.wrapper {
-    margin: 150px auto;
-    width: 70%; 
-}
-.text-box {
-    color: black;
-}
-.textbox h4 {
-    font-size: 16px;
-    padding-right: 50px;
-}
-
-header a {
-    text-decoration: none;
-    color: black;
-}
-.wrapper1 {
-    margin: 150px;
-    width: 70%;
-}
-.text-box1 {
-    color: black;
-}
-.text-box1 h5{
-    font-size: 16px;
+    flex-direction: column;
+    padding: 20px;
 }
 
 #home {
@@ -118,4 +76,77 @@ header a {
 
 #mywork {
     background-image: linear-gradient(rgba(255,255,255,0.75),rgba(255,255,255,0.75)), url('assests/Screenshot 2024-04-12 at 10.26.04 PM.png');
+    padding: 40px 20px; /* Add padding for better spacing */
+    min-height: 150vh; /* Increase the height for more content */
+}
+
+#home .profile-img {
+    width: 300px;
+    border-radius: 50%;
+}
+
+#home h1 {
+    font-size: 3em;
+}
+
+section h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+section h3 {
+    font-size: 1em;
+    font-family: 'poppins', sans-serif;
+    font-weight: 100;
+    padding: 50px 100px;
+}
+
+/* Grid Container Styles */
+#mywork .grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    justify-items: center;
+    align-items: start;
+    padding: 20px;
+}
+
+.grid-container .grid-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    max-width: 300px;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+}
+
+.grid-container img {
+    max-width: 100%;
+    height: auto;
+    border: 3px solid rgb(219, 211, 211);
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.grid-container h4, .grid-container h5 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.grid-container p {
+    font-size: 1em;
+    margin: 0 10px 10px 10px;
+}
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    padding: 50px;
+}
+
+footer p a {
+    text-decoration: none;
+    color: black;
 }
